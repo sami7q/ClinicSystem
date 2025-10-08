@@ -1,7 +1,7 @@
 # app/api/routers/doctors.py
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from core.services.doctors_service import (
+from app.core.services.doctors_service import (
     create_doctor,
     get_all_doctors,
     get_doctor_by_id,

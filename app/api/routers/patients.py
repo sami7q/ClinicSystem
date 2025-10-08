@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from typing import List
 from app.api.schemas import PatientCreate, PatientOut
 from app.api.deps import get_db
-from core.models import Patient
+from app.core.models import Patient
 
 router = APIRouter(prefix="/patients", tags=["Patients"])
 

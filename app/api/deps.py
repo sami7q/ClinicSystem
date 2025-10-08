@@ -1,7 +1,7 @@
 # app/api/deps.py
 from typing import Generator
 from fastapi import Depends
-from core.db import SessionLocal
+from app.core.db import SessionLocal
 from sqlalchemy.orm import Session
 
 def get_db() -> Generator[Session, None, None]:

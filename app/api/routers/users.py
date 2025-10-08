@@ -1,12 +1,12 @@
 # app/api/routers/users.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordRequestForm
-from core.services.users_service import (
+from app.core.services.users_service import (
     create_user,
     get_user_by_username,
     authenticate,
 )
-from core.auth import create_access_token, verify_token, require_role
+from app.core.auth import create_access_token, verify_token, require_role
 from app.api.schemas import UserCreate, UserOut
 
 router = APIRouter(prefix="/users", tags=["Users"])

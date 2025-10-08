@@ -1,7 +1,7 @@
 # app/api/routers/appointments.py
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from core.services.appointments_service import (
+from app.core.services.appointments_service import (
     create_appointment,
     list_appointments,
     update_appointment_status,

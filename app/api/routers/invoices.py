@@ -1,7 +1,7 @@
 # app/api/routers/invoices.py
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from core.services.invoices_service import (
+from app.core.services.invoices_service import (
     create_invoice,
     list_invoices,
     get_invoice_by_id,

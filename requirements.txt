@@ -1,5 +1,4 @@
-PyQt5
-SQLAlchemy
-passlib[bcrypt]
-fpdf2
-python-dateutil
+fastapi
+uvicorn[standard]
+PyJWT
+python-multipart

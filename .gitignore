@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# SQLite local data
+data/clinic.db
+*.sqlite3
+
+# Tools / IDE
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.spec

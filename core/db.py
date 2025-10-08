@@ -26,9 +26,11 @@ def get_db():
 
 def init_db():
     """تهيئة قاعدة البيانات وإنشاء الجداول إن لم تكن موجودة."""
-    from core import models  # استيراد الجداول عند التهيئة فقط
+    # استيراد جميع الـ Models لضمان تسجيلها مع Base
+    from core.models import User, Doctor, Patient, Appointment, Invoice
     Base.metadata.create_all(bind=engine)
     print("✅ Database initialized successfully at:", DB_PATH)
+    print(f"📊 Tables created: {list(Base.metadata.tables.keys())}")
 
 if __name__ == "__main__":
     init_db()

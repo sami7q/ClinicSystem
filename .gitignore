@@ -1,22 +1,72 @@
-# Python
+# =====================================
+# 🐍 Python general
+# =====================================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Byte-compiled / optimized / DLL files
 *.pyo
 *.pyd
+*.pdb
+*.so
 
-# Virtual env
+# =====================================
+# 🧱 Virtual environments
+# =====================================
+.venv/
 venv/
+env/
+ENV/
 .env/
+.venv.bak/
 
-# SQLite local data
-data/clinic.db
+# =====================================
+# 🗃️ Databases
+# =====================================
 *.sqlite3
+data/*.db
+data/*.sqlite
+data/clinic.db
 
-# Tools / IDE
+# =====================================
+# ⚙️ Tools & Editors
+# =====================================
 .vscode/
 .idea/
+*.code-workspace
 
-# Build artifacts
-dist/
+# =====================================
+# 🧰 Build artifacts
+# =====================================
 build/
+dist/
+*.egg-info/
 *.spec
+
+# =====================================
+# 📦 Packaging / Installers
+# =====================================
+pip-wheel-metadata/
+*.egg
+.eggs/
+
+# =====================================
+# 🧪 Testing / Coverage
+# =====================================
+htmlcov/
+.tox/
+.coverage
+nosetests.xml
+coverage.xml
+*.log
+
+# =====================================
+# 🧾 Misc
+# =====================================
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+*.lock
